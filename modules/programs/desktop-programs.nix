@@ -18,6 +18,7 @@
     prismlauncher
     kdePackages.kdeconnect-kde
     kdePackages.dolphin
+		kdePackages.ark
     kdePackages.okular
     kdePackages.kate
     kdePackages.gwenview

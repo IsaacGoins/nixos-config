@@ -88,9 +88,9 @@
 
   xdg.configFile."hypr/hyprland.conf".source = ../../config/hypr/hyprland.conf;
   xdg.configFile."hypr/hyprpaper.conf".source = ../../config/hypr/hyprpaper.conf;
-   xdg.configFile."waybar/config.jsonc".source = ../../config/waybar/config.jsonc;
-   xdg.configFile."waybar/style.css".source = ../../config/waybar/style.css;
-   xdg.configFile."rofi/config.rasi".source = ../../config/rofi/config.rasi;
-   xdg.configFile."alacritty/alacritty.toml".source = ../../config/alacritty/alacritty.toml;
+  xdg.configFile."waybar/config.jsonc".source = ../../config/waybar/config.jsonc;
+  xdg.configFile."waybar/style.css".source = ../../config/waybar/style.css;
+  xdg.configFile."rofi/config.rasi".source = ../../config/rofi/config.rasi;
+  xdg.configFile."alacritty/alacritty.toml".source = ../../config/alacritty/alacritty.toml;
 
 }

@@ -14,7 +14,9 @@
     tailscale
     xterm
     git
-		pciutils
+    pciutils
     pokeget-rs
+    xdg-user-dirs
   ];
+
 }
