@@ -36,5 +36,13 @@
           inputs.nixvim.nixosModules.nixvim
         ];
       };
+      nixosConfigurations.apollo = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/apollo/configuration.nix
+          inputs.home-manager.nixosModules.default
+          inputs.nixvim.nixosModules.nixvim
+        ];
+      };
     };
 }
