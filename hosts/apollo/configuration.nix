@@ -15,7 +15,7 @@
     ../../modules/programs/desktop-programs.nix
   ];
 
-  networking.hostName = "ares"; # Define hostname
+  networking.hostName = "apollo"; # Define hostname
 
   # Home Manager Location
   home-manager = {
