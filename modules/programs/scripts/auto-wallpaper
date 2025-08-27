@@ -1,0 +1,6 @@
+#!/bin/bash
+while true; do
+  sleep 1
+  /home/igoins/Programs/scripts/reload-wallpaper
+  sleep 1800 # 1800 seconds = 30 minutes
+done
