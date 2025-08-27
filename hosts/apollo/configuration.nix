@@ -15,9 +15,7 @@
     ../../modules/programs/desktop-programs.nix
   ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+
 
   networking.hostName = "apollo"; # Define hostname
 
