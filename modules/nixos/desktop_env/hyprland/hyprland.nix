@@ -20,6 +20,9 @@
     rofi-calc
     rofi-power-menu
     rofi-emoji-wayland
+		brightnessctl
+		playerctl
+		wireplumber
   ];
 
 }
