@@ -80,14 +80,17 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  
-  # SYMLINKS FOR CONFIGS
-  
-  ## Make sure xdg is enabled, necessary for configs
-    xdg.enable = true;
 
-    xdg.configFile."hypr/hyprland.conf".source  = ../../config/hypr/hyprland.conf;
+  # SYMLINKS FOR CONFIGS
+
+  ## Make sure xdg is enabled, necessary for configs
+  xdg.enable = true;
+
+  xdg.configFile."hypr/hyprland.conf".source = ../../config/hypr/hyprland.conf;
   xdg.configFile."hypr/hyprpaper.conf".source = ../../config/hypr/hyprpaper.conf;
-    xdg.configFile."waybar/config.jsonc".source = ../config/waybar/config.jsonc;
+   xdg.configFile."waybar/config.jsonc".source = ../../config/waybar/config.jsonc;
+   xdg.configFile."waybar/style.css".source = ../../config/waybar/style.css;
+   xdg.configFile."rofi/config.rasi".source = ../../config/rofi/config.rasi;
+   xdg.configFile."alacritty/alacritty.toml".source = ../../config/alacritty/alacritty.toml;
 
 }

@@ -6,7 +6,7 @@
   imports = [
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/desktop_env/kde_plasma/kdePlasma.nix
+    ../../modules/nixos/desktop_env/hyprland/hyprland.nix
     ../../modules/nixos/nvidia/nvidia.nix
     ../../modules/nixos/accounts.nix
     ../../modules/nixos/basic.nix
@@ -15,9 +15,9 @@
     ../../modules/programs/desktop-programs.nix
   ];
 
-boot.loader.grub.enable = true;
-boot.loader.grub.device = "/dev/vda";
-boot.loader.grub.useOSProber = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/vda";
+  boot.loader.grub.useOSProber = true;
 
   networking.hostName = "apollo"; # Define hostname
 

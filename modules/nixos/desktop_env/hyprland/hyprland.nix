@@ -1,10 +1,13 @@
 { pkgs, ... }:
 {
-  # Enable Hyprland
-  programs.hyprland.enable = true;
 
   # Enable SSDM Greeter
   services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+
+  # Enable Hyprland
+  programs.hyprland.enable = true;
+  services.displayManager.defaultSession = "hyprland";
 
   environment.systemPackages = with pkgs; [
     swaynotificationcenter
@@ -20,9 +23,9 @@
     rofi-calc
     rofi-power-menu
     rofi-emoji-wayland
-		brightnessctl
-		playerctl
-		wireplumber
+    brightnessctl
+    playerctl
+    wireplumber
   ];
 
 }
