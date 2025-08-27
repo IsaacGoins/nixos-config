@@ -14,5 +14,6 @@
     tailscale
     xterm
     git
+    pokeget-rs
   ];
 }
