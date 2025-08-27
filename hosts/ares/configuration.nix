@@ -6,7 +6,7 @@
   imports = [
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/desktop_env/kdePlasma.nix
+    ../../modules/nixos/desktop_env/kde_plasma/kdePlasma.nix
     ../../modules/nixos/nvidia/nvidia.nix
     ../../modules/nixos/accounts.nix
     ../../modules/nixos/basic.nix
@@ -18,7 +18,6 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
 
   networking.hostName = "ares"; # Define hostname
 

@@ -7,6 +7,7 @@
     ./plugins/lsp.nix
     ./plugins/lualine.nix
     ./plugins/luasnip.nix
+    ./plugins/mini-git.nix
     ./plugins/modicator.nix
     ./plugins/neotree.nix
     ./plugins/neoscroll.nix
