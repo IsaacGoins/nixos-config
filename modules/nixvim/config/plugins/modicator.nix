@@ -1,0 +1,3 @@
+{
+  plugins.modicator.enable = true;
+}

@@ -1,0 +1,21 @@
+{
+  imports = [
+    ./plugins/alpha.nix
+    ./plugins/cmp.nix
+    ./plugins/comment.nix
+    ./plugins/lsp-format.nix
+    ./plugins/lsp.nix
+    ./plugins/lualine.nix
+    ./plugins/luasnip.nix
+    ./plugins/modicator.nix
+    ./plugins/neotree.nix
+    ./plugins/neoscroll.nix
+    ./plugins/noice.nix
+    ./plugins/notify.nix
+    ./plugins/none-ls.nix
+    ./plugins/telescope.nix
+    ./plugins/treesitter.nix
+    ./plugins/treesitter-textobjects.nix
+    ./plugins/markview.nix
+  ];
+}
