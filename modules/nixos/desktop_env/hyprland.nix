@@ -26,6 +26,7 @@
     brightnessctl
     playerctl
     wireplumber
+    pavucontrol
     catppuccin-cursors.macchiatoDark
   ];
 
