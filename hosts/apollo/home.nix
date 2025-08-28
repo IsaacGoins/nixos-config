@@ -95,5 +95,4 @@
     ../../config/rofi/catppuccin-macchiato.rasi;
   xdg.configFile."rofi/catppuccin-default.rasi".source = ../../config/rofi/catppuccin-default.rasi;
   xdg.configFile."alacritty/alacritty.toml".source = ../../config/alacritty/alacritty.toml;
-
 }

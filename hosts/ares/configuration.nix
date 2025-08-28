@@ -13,6 +13,7 @@
     ../../modules/nixos/fonts.nix
     ../../modules/programs/programs.nix
     ../../modules/programs/desktop-programs.nix
+		../../modules/programs/ares-programs.nix
   ];
 
   # Bootloader.
