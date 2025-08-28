@@ -91,6 +91,9 @@
   xdg.configFile."waybar/config.jsonc".source = ../../config/waybar/config.jsonc;
   xdg.configFile."waybar/style.css".source = ../../config/waybar/style.css;
   xdg.configFile."rofi/config.rasi".source = ../../config/rofi/config.rasi;
+  xdg.configFile."rofi/catppuccin-macchiato.rasi".source =
+    ../../config/rofi/catppuccin-macchiato.rasi;
+  xdg.configFile."rofi/catppuccin-default.rasi".source = ../../config/rofi/catppuccin-default.rasi;
   xdg.configFile."alacritty/alacritty.toml".source = ../../config/alacritty/alacritty.toml;
 
 }

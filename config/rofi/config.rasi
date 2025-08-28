@@ -6,6 +6,4 @@ configuration{
   show-icons: true;
 }
 
-//@theme "/usr/share/rofi/themes/rounded-green-dark.rasi"
-
-@theme "/usr/share/rofi/themes/catppuccin-lavrent-mocha.rasi"
+	@theme "catppuccin-default"
