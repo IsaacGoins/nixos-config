@@ -86,6 +86,7 @@
   ## Make sure xdg is enabled, necessary for configs
   xdg.enable = true;
 
+  # Symlinks for Various Programs
   xdg.configFile."hypr/hyprland.conf".source = ../../config/hypr/hyprland.conf;
   xdg.configFile."hypr/hyprpaper.conf".source = ../../config/hypr/hyprpaper.conf;
   xdg.configFile."waybar/config.jsonc".source = ../../config/waybar/config.jsonc;

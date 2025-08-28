@@ -21,6 +21,8 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    catppuccin.url = "github:catppuccin/nix/release-25.05";
   };
 
   outputs =
@@ -42,6 +44,7 @@
           ./hosts/apollo/configuration.nix
           inputs.home-manager.nixosModules.default
           inputs.nixvim.nixosModules.nixvim
+          inputs.catppuccin.nixosModules.catppuccin
         ];
       };
     };

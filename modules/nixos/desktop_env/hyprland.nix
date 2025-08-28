@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
-
-  # Enable SSDM Greeter
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  imports = [
+    # Import SDDM Config and Enabler
+    ../../../config/sddm/sddm.nix
+  ];
 
   # Enable Hyprland
   programs.hyprland.enable = true;
@@ -26,7 +26,7 @@
     brightnessctl
     playerctl
     wireplumber
+    catppuccin-cursors.macchiatoDark
   ];
-
 
 }

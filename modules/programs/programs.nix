@@ -17,6 +17,8 @@
     pciutils
     pokeget-rs
     xdg-user-dirs
+    zip
+		unzip
   ];
 
 }
