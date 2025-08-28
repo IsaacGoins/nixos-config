@@ -6,8 +6,9 @@
   imports = [
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/desktop_env/hyprland/hyprland.nix
+    ../../modules/nixos/desktop_env/hyprland.nix
     ../../modules/nixos/nvidia/nvidia.nix
+		../../modules/nixos/nvidia/nvidia-mobile.nix
     ../../modules/nixos/accounts.nix
     ../../modules/nixos/basic.nix
     ../../modules/nixos/fonts.nix
