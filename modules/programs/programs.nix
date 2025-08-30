@@ -19,6 +19,9 @@
     xdg-user-dirs
     zip
 		unzip
+		libgcc
+		gcc
+		gnumake
   ];
 
 }

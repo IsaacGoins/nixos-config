@@ -18,12 +18,13 @@
     prismlauncher
     kdePackages.kdeconnect-kde
     kdePackages.dolphin
-		kdePackages.ark
+    kdePackages.ark
     kdePackages.okular
     kdePackages.kate
     kdePackages.gwenview
     kdePackages.plasma-systemmonitor
     kdePackages.partitionmanager
     qemu
+    inkscape
   ];
 }
