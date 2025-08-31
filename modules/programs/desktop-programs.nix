@@ -1,5 +1,9 @@
 { pkgs, ... }:
 {
+
+  imports = [
+    ./kdePackages.nix
+  ];
   # Enable Steam
   programs.steam.enable = true;
 
@@ -16,14 +20,6 @@
     obsidian
     f3d
     prismlauncher
-    kdePackages.kdeconnect-kde
-    kdePackages.dolphin
-    kdePackages.ark
-    kdePackages.okular
-    kdePackages.kate
-    kdePackages.gwenview
-    kdePackages.plasma-systemmonitor
-    kdePackages.partitionmanager
     qemu
     inkscape
   ];
