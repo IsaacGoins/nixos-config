@@ -18,5 +18,6 @@
     ./plugins/treesitter.nix
     ./plugins/treesitter-textobjects.nix
     ./plugins/markview.nix
+    ./plugins/floaterm.nix
   ];
 }

@@ -23,6 +23,15 @@
     };
 
     catppuccin.url = "github:catppuccin/nix/release-25.05";
+
+    quickshell = {
+      # add ?ref=<tag> to track a tag
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+
+      # THIS IS IMPORTANT
+      # Mismatched system dependencies will lead to crashes and other issues.
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -45,6 +54,11 @@
           inputs.home-manager.nixosModules.default
           inputs.nixvim.nixosModules.nixvim
           inputs.catppuccin.nixosModules.catppuccin
+          {
+            environment.systemPackages = [
+              inputs.quickshell.packages.x86_64-linux.default
+            ];
+          }
         ];
       };
     };

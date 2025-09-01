@@ -17,6 +17,7 @@
       nginx_language_server.enable = true;
       nixd.enable = true;
       pyright.enable = true;
+      qmlls.enable = true;
       sqls.enable = true;
       systemd_ls.enable = true;
       ts_ls.enable = true;

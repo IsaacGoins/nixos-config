@@ -21,14 +21,22 @@
       key = "<leader>ca";
       action = "<cmd> lua vim.lsp.buf.code_action()<CR>";
     }
-		{
-			key = "<leader>d";
-			action = "<cmd> lua vim.lsp.buf.definition()<CR>";
-		}
-		{
-			key = "K";
-			action = "<cmd> lua vim.lsp.buf.hover()<CR>";
-		}
+    {
+      key = "<leader>d";
+      action = "<cmd> lua vim.lsp.buf.definition()<CR>";
+    }
+    {
+      key = "K";
+      action = "<cmd> lua vim.lsp.buf.hover()<CR>";
+    }
+    {
+      key = "<leader>t";
+      action = "<cmd>FloatermNew<CR>";
+    }
+    {
+      key = "<leader>qt";
+      action = "<cmd>FloatermKill<CR>";
+    }
 
   ];
 }
