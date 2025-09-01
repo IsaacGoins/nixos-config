@@ -18,10 +18,11 @@
     pokeget-rs
     xdg-user-dirs
     zip
-		unzip
-		libgcc
-		gcc
-		gnumake
+    unzip
+    libgcc
+    gcc
+    gnumake
+    modrinth-app
   ];
 
 }

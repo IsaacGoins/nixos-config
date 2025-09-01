@@ -24,7 +24,7 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -98,5 +98,14 @@
   xdg.configFile."alacritty/alacritty.toml".source = ../../config/alacritty/alacritty.toml;
   xdg.configFile."alacritty/catppuccin-macchiato.toml".source =
     ../../config/alacritty/catppuccin-macchiato.coml;
+
+  # Zoxide Config
+  programs.zoxide.enable = true;
+  programs.bash = {
+    enable = true;
+    initExtra = ''
+      eval "$(${pkgs.zoxide}/bin/zoxide init --cmd cd bash)"
+    '';
+  };
 
 }
