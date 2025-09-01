@@ -22,7 +22,6 @@
     libgcc
     gcc
     gnumake
-    modrinth-app
   ];
 
 }
