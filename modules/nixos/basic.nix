@@ -41,8 +41,13 @@
   };
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
-
+  services.printing = {
+    enable = true;
+    drivers = [
+      pkgs.epson-escpr
+      pkgs.epson-escpr2
+    ];
+  };
   # Bluetooth
   services.blueman.enable = true;
   hardware.bluetooth = {

@@ -4,5 +4,6 @@
     nerd-fonts.jetbrains-mono
     corefonts
     vistafonts
+    excalifont
   ];
 }

@@ -3,6 +3,20 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kdeconnect-kde
     kdePackages.dolphin
+    xdg-utils
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+    kdePackages.kde-cli-tools
+    kdePackages.kservice
+    kdePackages.plasma-workspace
+    kdePackages.qtsvg
+    kdePackages.kio-fuse # to mount remote filesystems via FUSE
+    kdePackages.kio-extras # extra protocols support (sftp, fish and more)
+    kdePackages.kdegraphics-thumbnailers
+    libsForQt5.ffmpegthumbs
+    kdePackages.qtsvg
+    libsForQt5.kio-extras
     kdePackages.ark
     kdePackages.okular
     kdePackages.kate
@@ -34,4 +48,18 @@
     kdePackages.ktorrent # Powerful BitTorrent client
     kdePackages.kde-cli-tools
   ];
+  xdg.menus.enable = true;
+  xdg.mime.enable = true;
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-hyprland
+      pkgs.xdg-desktop-portal-gtk
+    ];
+  };
+  services.udisks2.enable = true; # fixes the UDisks2 error spam
+  xdg.autostart.enable = true; # ensures XDG autostarts are respected
+  environment.etc."xdg/menus/applications.menu".source =
+    "/run/current-system/sw/etc/xdg/menus/plasma-applications.menu";
+
 }
