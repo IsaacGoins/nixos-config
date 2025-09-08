@@ -1,9 +1,0 @@
-configuration{
-  modes: [combi];
-  modi: [combi];
-  font: "JetBrainsMonoNerdFontMono 12";
-  combi-modi: [window, drun, ssh];
-  show-icons: true;
-}
-
-	@theme "catppuccin-default"
