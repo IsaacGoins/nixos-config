@@ -1,9 +1,6 @@
 { pkgs, ... }:
 {
 
-  imports = [
-    ./kdePackages.nix
-  ];
   # Enable Steam
   programs.steam.enable = true;
 

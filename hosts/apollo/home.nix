@@ -5,7 +5,7 @@
 
 {
   imports = [
-    ../../modules/programs/zen-browser.nix
+    ../../modules/programs/program-installers/zen-browser.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -87,17 +87,23 @@
   xdg.enable = true;
 
   # Symlinks for Various Programs
-  xdg.configFile."hypr/hyprland.conf".source = ../../config/hypr/hyprland.conf;
-  xdg.configFile."hypr/hyprpaper.conf".source = ../../config/hypr/hyprpaper.conf;
-  xdg.configFile."waybar/config.jsonc".source = ../../config/waybar/config.jsonc;
-  xdg.configFile."waybar/style.css".source = ../../config/waybar/style.css;
-  xdg.configFile."rofi/config.rasi".source = ../../config/rofi/config.rasi;
+  xdg.configFile."hypr/hyprland.conf".source = ../../modules/nixos/desktop-env/hyprland/hyprland.nix;
+  xdg.configFile."hypr/hyprpaper.conf".source =
+    ../../modules/nixos/desktop-env/hyprland/config/hypr/hyprland.conf;
+  xdg.configFile."waybar/config.jsonc".source =
+    ../../modules/nixos/desktop-env/hyprland/config/waybar/config.jsonc;
+  xdg.configFile."waybar/style.css".source =
+    ../../modules/nixos/desktop-env/hyprland/config/waybar/style.css;
+  xdg.configFile."rofi/config.rasi".source =
+    ../../modules/nixos/desktop-env/hyprland/config/rofi/config.rasi;
   xdg.configFile."rofi/catppuccin-macchiato.rasi".source =
-    ../../config/rofi/catppuccin-macchiato.rasi;
-  xdg.configFile."rofi/catppuccin-default.rasi".source = ../../config/rofi/catppuccin-default.rasi;
-  xdg.configFile."alacritty/alacritty.toml".source = ../../config/alacritty/alacritty.toml;
+    ../../modules/nixos/desktop-env/hyprland/config/rofi/catppuccin-macchiato.rasi;
+  xdg.configFile."rofi/catppuccin-default.rasi".source =
+    ../../modules/nixos/desktop-env/hyprland/config/rofi/catppuccin-default.rasi;
+  xdg.configFile."alacritty/alacritty.toml".source =
+    ../../modules/programs/config/alacritty/alacritty.toml;
   xdg.configFile."alacritty/catppuccin-macchiato.toml".source =
-    ../../config/alacritty/catppuccin-macchiato.coml;
+    ../../modules/programs/config/alacritty/catppuccin-macchiato.coml;
 
   # Zoxide Config
   programs.zoxide.enable = true;

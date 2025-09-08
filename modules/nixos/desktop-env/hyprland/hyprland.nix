@@ -2,7 +2,7 @@
 {
   imports = [
     # Import SDDM Config and Enabler
-    ../../../config/sddm/sddm.nix
+    ./config/sddm/sddm.nix
   ];
 
   # Enable Hyprland
@@ -29,5 +29,4 @@
     pavucontrol
     catppuccin-cursors.macchiatoDark
   ];
-
 }

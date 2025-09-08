@@ -6,15 +6,14 @@
   imports = [
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/desktop_env/hyprland.nix
+    ../../modules/nixos/desktop-env/hyprland/hyprland.nix
     ../../modules/nixos/nvidia/nvidia.nix
     ../../modules/nixos/nvidia/nvidia-mobile.nix
     ../../modules/nixos/accounts.nix
     ../../modules/nixos/basic.nix
     ../../modules/nixos/fonts.nix
-    ../../modules/programs/programs.nix
-    ../../modules/programs/desktop-programs.nix
-    ../../modules/programs/apollo-programs.nix
+    ../../modules/programs/system-packages.nix
+    ../../modules/programs/shared-programs.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
