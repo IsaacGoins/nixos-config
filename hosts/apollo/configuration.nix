@@ -14,7 +14,7 @@
     ../../modules/nixos/fonts.nix
     ../../modules/programs/system-packages.nix
     ../../modules/programs/shared-programs.nix
-		../../modules/nixos/desktop-env/kdePlasma/plasma-packages.nix
+    ../../modules/nixos/desktop-env/kde-plasma/plasma-packages.nix
   ];
 
   boot.loader.systemd-boot.enable = true;

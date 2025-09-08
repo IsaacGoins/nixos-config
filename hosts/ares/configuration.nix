@@ -6,14 +6,13 @@
   imports = [
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/desktop_env/kdePlasma.nix
+    ../../modules/nixos/desktop-env/kde-plasma/kde-plasma.nix
     ../../modules/nixos/nvidia/nvidia.nix
     ../../modules/nixos/accounts.nix
     ../../modules/nixos/basic.nix
     ../../modules/nixos/fonts.nix
-    ../../modules/programs/programs.nix
-    ../../modules/programs/desktop-programs.nix
-		../../modules/programs/ares-programs.nix
+    ../../modules/programs/shared-programs.nix
+    ../../modules/programs/system-packages.nix
   ];
 
   # Bootloader.
