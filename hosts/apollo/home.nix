@@ -87,7 +87,7 @@
   xdg.enable = true;
 
   # Symlinks for Various Programs
-  xdg.configFile."hypr/hyprland.conf".source = ../../modules/nixos/desktop-env/hyprland/hyprland.nix;
+  xdg.configFile."hypr/hyprland.conf".source = ../../modules/nixos/desktop-env/hyprland/config/hypr/hyprland.conf;
   xdg.configFile."hypr/hyprpaper.conf".source =
     ../../modules/nixos/desktop-env/hyprland/config/hypr/hyprland.conf;
   xdg.configFile."waybar/config.jsonc".source =
