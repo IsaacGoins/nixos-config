@@ -5,7 +5,8 @@
 
 {
   imports = [
-    ../../modules/programs/program-installers/zen-browser.nix
+    ../../modules/programs/shared-programs.nix
+    ../../modules/nixos/desktop-env/gnome/gnome-config.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -87,7 +88,8 @@
   xdg.enable = true;
 
   # Symlinks for Various Programs
-  xdg.configFile."hypr/hyprland.conf".source = ../../modules/nixos/desktop-env/hyprland/config/hypr/hyprland.conf;
+  xdg.configFile."hypr/hyprland.conf".source =
+    ../../modules/nixos/desktop-env/hyprland/config/hypr/hyprland.conf;
   xdg.configFile."hypr/hyprpaper.conf".source =
     ../../modules/nixos/desktop-env/hyprland/config/hypr/hyprland.conf;
   xdg.configFile."waybar/config.jsonc".source =

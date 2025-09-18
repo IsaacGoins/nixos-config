@@ -9,6 +9,20 @@
   # Enable Tailscale
   services.tailscale.enable = true;
 
+  # Required for virt-manager to work
+  users.groups.libvirtd.members = [ "igoins" ];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
+
+  # Steam must be here
+  programs.steam = {
+    enable = true;
+    # optional helpers
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
+  hardware.opengl.driSupport32Bit = true;
+
   environment.systemPackages = with pkgs; [
     wget
     tailscale

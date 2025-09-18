@@ -1,16 +1,16 @@
+#### IMPORT INTO HOME-MANAGER ###
 { pkgs, ... }:
 {
+  imports = [
+    ../../modules/programs/program-installers/zen-browser.nix
+  ];
 
-  # Enable Steam
-  programs.steam.enable = true;
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
 
-  # Enable Virt-manager
-  programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = [ "igoins" ];
-  virtualisation.libvirtd.enable = true;
-  virtualisation.spiceUSBRedirection.enable = true;
-
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
+    alacritty
+    virt-manager
     discord
     orca-slicer
     libreoffice-qt
@@ -21,6 +21,7 @@
     prismlauncher
     qemu
     inkscape
+    kicad
   ];
 
 }

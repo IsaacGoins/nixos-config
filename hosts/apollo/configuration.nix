@@ -6,15 +6,14 @@
   imports = [
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/desktop-env/hyprland/hyprland.nix
+    ../../modules/nixos/desktop-env/gnome/gnome.nix
+    # ../../modules/nixos/desktop-env/hyprland/hyprland.nix
+    # ../../modules/nixos/desktop-env/kde-plasma/plasma-packages.nix
     ../../modules/nixos/nvidia/nvidia.nix
-    ../../modules/nixos/nvidia/nvidia-mobile.nix
     ../../modules/nixos/accounts.nix
     ../../modules/nixos/basic.nix
     ../../modules/nixos/fonts.nix
     ../../modules/programs/system-packages.nix
-    ../../modules/programs/shared-programs.nix
-    ../../modules/nixos/desktop-env/kde-plasma/plasma-packages.nix
   ];
 
   boot.loader.systemd-boot.enable = true;

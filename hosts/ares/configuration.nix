@@ -11,7 +11,6 @@
     ../../modules/nixos/accounts.nix
     ../../modules/nixos/basic.nix
     ../../modules/nixos/fonts.nix
-    ../../modules/programs/shared-programs.nix
     ../../modules/programs/system-packages.nix
   ];
 
