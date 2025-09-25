@@ -36,6 +36,7 @@
     libgcc
     gcc
     gnumake
+		gnome-network-displays
   ];
 
 }

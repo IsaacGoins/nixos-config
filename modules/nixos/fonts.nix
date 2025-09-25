@@ -6,4 +6,7 @@
     vistafonts
     excalifont
   ];
+  environment.systemPackages = [
+    pkgs.font-manager
+  ];
 }
