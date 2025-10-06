@@ -22,6 +22,7 @@
       systemd_ls.enable = true;
       ts_ls.enable = true;
       yamlls.enable = true;
+      verible.enable = true;
     };
   };
 }

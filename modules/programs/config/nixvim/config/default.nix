@@ -20,4 +20,17 @@
     fd
     fzf
   ];
+
+  # Force verilog files
+  extraConfigLua = ''
+    -- Treat .v files as Verilog, not V language
+    vim.filetype.add({
+      extension = {
+        v = "verilog",
+        sv = "systemverilog",
+        svh = "systemverilog",
+      },
+    })
+  '';
+
 }
