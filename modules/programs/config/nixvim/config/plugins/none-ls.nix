@@ -15,6 +15,7 @@
           enable = true;
           disableTsServerFormatter = true;
         };
+        verible_verilog_format.enable = true;
       };
     };
   };

@@ -14,6 +14,7 @@
     ../../modules/nixos/basic.nix
     ../../modules/nixos/fonts.nix
     ../../modules/programs/system-packages.nix
+		../../modules/programs/host-programs/apollo.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
