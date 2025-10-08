@@ -38,6 +38,7 @@
     unzip
     libgcc
     gcc
+    valgrind
     gnumake
     gnome-network-displays
   ];
