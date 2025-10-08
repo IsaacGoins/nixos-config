@@ -23,6 +23,9 @@
   };
   hardware.opengl.driSupport32Bit = true;
 
+  # Enable foreign dynamically-linked executables
+  programs.nix-ld.enable = true;
+
   environment.systemPackages = with pkgs; [
     wget
     tailscale
