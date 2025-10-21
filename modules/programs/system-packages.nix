@@ -9,10 +9,12 @@
   # Enable Tailscale
   services.tailscale.enable = true;
 
-  # Required for virt-manager to work
+  # Required for virt-manager and gnome boxes to work
   users.groups.libvirtd.members = [ "igoins" ];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
+  services.spice-vdagentd.enable = true;
+  users.users.igoins.extraGroups = [ "libvirtd" ];
 
   # Steam must be here
   programs.steam = {
@@ -28,6 +30,7 @@
 
   environment.systemPackages = with pkgs; [
     wget
+    gnome-boxes
     tailscale
     xterm
     git
